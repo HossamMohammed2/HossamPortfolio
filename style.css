@@ -7,7 +7,20 @@ header .overlay{background:rgba(0,0,0,0.75);padding:50px;border-radius:15px;}
 .profile-pic{width:160px;height:160px;border-radius:50%;border:3px solid #ff7f50;object-fit:cover;margin-bottom:20px;}
 header h1 span{color:#ff7f50;}
 header p{margin:10px 0;color:#ccc;}
-header a.btn{display:inline-block;margin-top:20px;padding:14px 35px;background:#ff7f50;color:#000;border-radius:30px;font-weight:bold;transition:0.3s;}
+header a.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:14px 35px;
+    background:#ff7f50;
+    color:#000;
+    border-radius:30px;
+    font-weight:bold;
+    font-size:1rem;
+    text-align:center;
+    text-decoration:none;
+    white-space: nowrap;
+    transition:0.3s;
+}
 header a.btn:hover{background:#ffa04d;}
 
 nav{position:sticky;top:0;background:#111;z-index:1000;}
@@ -38,6 +51,7 @@ footer{text-align:center;padding:15px;background:#000;color:#777;font-size:0.9re
     .profile-pic{width:120px;height:120px;}
     header h1{font-size:1.8rem;}
     header p{font-size:0.9rem;}
+    header a.btn{padding:12px 25px;font-size:0.9rem;}
     nav ul{flex-direction:column;gap:10px;}
     .cards{grid-template-columns:1fr;gap:20px;}
     .skills{flex-direction:column;align-items:center;gap:15px;}
