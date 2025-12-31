@@ -1,12 +1,30 @@
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI', Tahoma,sans-serif;}
-body{background:#0e0e0e;color:#fff;}
+/* ======== General ======== */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI', Tahoma, sans-serif;}
+body{background:#0e0e0e;color:#fff;scroll-behavior: smooth;}
 img{max-width:100%;height:auto;}
 
-header{height:100vh;background:url('images/industrial-bg.jpg') center/cover no-repeat;display:flex;justify-content:center;align-items:center;text-align:center;}
-header .overlay{background:rgba(0,0,0,0.75);padding:50px;border-radius:15px;}
-.profile-pic{width:160px;height:160px;border-radius:50%;border:3px solid #ff7f50;object-fit:cover;margin-bottom:20px;}
+/* ======== Header ======== */
+header{
+    height:100vh;
+    background:url('images/industrial-bg.jpg') center/cover no-repeat;
+    display:flex;justify-content:center;align-items:center;text-align:center;
+}
+header .overlay{
+    background:rgba(0,0,0,0.75);
+    padding:50px;
+    border-radius:15px;
+}
+.profile-pic{
+    width:160px;height:160px;
+    border-radius:50%;
+    border:3px solid #ff7f50;
+    object-fit:cover;
+    margin-bottom:20px;
+}
 header h1 span{color:#ff7f50;}
 header p{margin:10px 0;color:#ccc;}
+
+/* ======== Buttons ======== */
 header a.btn{
     display:inline-block;
     margin-top:20px;
@@ -23,36 +41,97 @@ header a.btn{
 }
 header a.btn:hover{background:#ffa04d;}
 
-nav{position:sticky;top:0;background:#111;z-index:1000;}
-nav ul{display:flex;justify-content:center;list-style:none;padding:10px 0;gap:20px;}
-nav ul li a{color:#fff;font-weight:bold;transition:0.3s;}
-nav ul li a:hover{color:#ff7f50;}
+/* ======== Navigation ======== */
+nav{
+    position:sticky;
+    top:0;
+    background:#111;
+    z-index:1000;
+}
+nav ul.nav-links{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    padding:10px 0;
+    gap:20px;
+}
+nav ul.nav-links li a{
+    color:#fff;
+    font-weight:bold;
+    font-size:1rem;
+    text-decoration:none;
+    transition:0.3s;
+}
+nav ul.nav-links li a:hover{color:#ff7f50;}
 
+/* ======== Sections ======== */
 section{padding:80px 10%;}
-.section-title{font-size:2.2rem;margin-bottom:40px;border-left:5px solid #ff7f50;padding-left:15px;}
+.section-title{
+    font-size:2.2rem;
+    margin-bottom:40px;
+    border-left:5px solid #ff7f50;
+    padding-left:15px;
+}
 
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;}
-.card{background:#151515;border-radius:15px;padding:20px;border:1px solid #2a2a2a;transition:0.3s;}
-.card:hover{transform:translateY(-10px);border-color:#ff7f50;}
+/* ======== Cards ======== */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+.card{
+    background:#151515;
+    border-radius:15px;
+    padding:20px;
+    border:1px solid #2a2a2a;
+    transition:0.3s;
+}
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#ff7f50;
+}
 .card h3{color:#ff7f50;margin-bottom:10px;}
 .project-img{width:100%;height:180px;object-fit:cover;border-radius:10px;}
 
-.skills{display:flex;flex-wrap:wrap;gap:15px;justify-content:center;}
-.skill{background:#151515;padding:12px 20px;border-radius:20px;border:1px solid #ff7f50;}
+/* ======== Skills ======== */
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+}
+.skill{
+    background:#151515;
+    padding:12px 20px;
+    border-radius:20px;
+    border:1px solid #ff7f50;
+}
 
+/* ======== Contact ======== */
 #contact{text-align:center;}
 #contact a{color:#ff7f50;text-decoration:none;}
 #contact a:hover{color:#ffa04d;}
 
-footer{text-align:center;padding:15px;background:#000;color:#777;font-size:0.9rem;}
+/* ======== Footer ======== */
+footer{
+    text-align:center;
+    padding:15px;
+    background:#000;
+    color:#777;
+    font-size:0.9rem;
+}
 
+/* ======== Responsive / Mobile ======== */
 @media(max-width:768px){
     header .overlay{padding:30px;}
     .profile-pic{width:120px;height:120px;}
     header h1{font-size:1.8rem;}
     header p{font-size:0.9rem;}
     header a.btn{padding:12px 25px;font-size:0.9rem;}
-    nav ul{flex-direction:column;gap:10px;}
+    
+    nav ul.nav-links{flex-direction:column;gap:15px;}
+    nav ul.nav-links li a{font-size:0.95rem;padding:10px 0;}
+    
     .cards{grid-template-columns:1fr;gap:20px;}
     .skills{flex-direction:column;align-items:center;gap:15px;}
 }
