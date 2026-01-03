@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hossam Eldin Mohammed | Industrial Automation Engineer</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hossam Eldin | Industrial Automation Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <div class="overlay">
-        <img src="images/profile.jpg" alt="Hossam Eldin Mohammed" class="profile-pic">
+    <div class="hero-content">
+        <div class="profile-container">
+            <img src="images/profile.jpg" alt="Hossam Eldin Mohammed" class="profile-pic">
+            <div class="status-badge">Available for Projects</div>
+        </div>
         <h1>Hossam Eldin <span>Mohammed</span></h1>
-        <p>Industrial Automation Engineer | Electrical Power & Control</p>
-        <p>📞 01204791684 | ✉️ hossammohammed2002h@gmail.com</p>
-        <a href="HossamCV.pdf" download class="btn">Download CV</a>
+        <p class="subtitle">Industrial Automation Engineer | Electrical Power & Control</p>
+        <div class="header-contact">
+            <span><i class="fas fa-phone"></i> 01204791684</span>
+            <span><i class="fas fa-envelope"></i> hossammohammed2002h@gmail.com</span>
+        </div>
+        <div class="cta-group">
+            <a href="HossamCV.pdf" download class="btn btn-primary"><i class="fas fa-download"></i> Download CV</a>
+            <a href="#contact" class="btn btn-outline">Hire Me</a>
+        </div>
     </div>
 </header>
 
-<nav>
-    <ul>
-        <li><a href="#about">About Me</a></li>
+<nav id="navbar">
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -29,16 +40,25 @@
 </nav>
 
 <section id="about">
-    <h2 class="section-title">About Me</h2>
-    <p>Industrial Automation Engineer skilled in PLC, SCADA, HMI, Motor Drives, and Electrical Control Panels. Passionate about delivering efficient and reliable automation solutions.</p>
-    <h3>Education</h3>
-    <p>Benha Faculty of Engineering – Electrical Power & Control | 09/2021 - Present</p>
+    <h2 class="section-title">Professional Profile</h2>
+    <div class="about-grid">
+        <div class="about-text">
+            <p>Dedicated Industrial Automation Engineer with a strong foundation in Electrical Power and Control Systems. Specializing in designing, programming, and maintaining complex automated systems using industry-standard tools like Siemens TIA Portal and Schneider Electric solutions.</p>
+        </div>
+        <div class="education-card">
+            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+            <p><strong>Benha Faculty of Engineering</strong></p>
+            <p>B.Sc. in Electrical Power & Control</p>
+            <p class="date">09/2021 - Present</p>
+        </div>
+    </div>
 </section>
 
-<section id="experience">
-    <h2 class="section-title">Internship & Training</h2>
+<section id="experience" class="bg-dark">
+    <h2 class="section-title">Internships & Training</h2>
     <div class="cards">
         <div class="card">
+            <div class="card-icon"><i class="fas fa-industry"></i></div>
             <h3>MAM – Schneider Electric Partner</h3>
             <ul>
                 <li>Prisma & Spacial LV panel assembly</li>
@@ -47,6 +67,7 @@
             </ul>
         </div>
         <div class="card">
+            <div class="card-icon"><i class="fas fa-microchip"></i></div>
             <h3>ITIDA – Creative Hub Benha</h3>
             <ul>
                 <li>Hands-on PLC programming & Digital Sensors</li>
@@ -54,9 +75,10 @@
             </ul>
         </div>
         <div class="card">
+            <div class="card-icon"><i class="fas fa-cogs"></i></div>
             <h3>Automation Control Center</h3>
             <ul>
-                <li>PLC S7‑1200 / S7‑300</li>
+                <li>PLC S7‑1200 / S7‑300 Configuration</li>
                 <li>Motor Drives, HMI, SCADA Systems</li>
             </ul>
         </div>
@@ -64,50 +86,46 @@
 </section>
 
 <section id="projects">
-    <h2 class="section-title">Projects</h2>
-    <div class="cards">
-        <div class="card">
-            <img src="images/project1.jpg" alt="Smart Greenhouse Project" class="project-img">
-            <h3>Smart Greenhouse Automation</h3>
-            <p>PLC, SCADA, IIoT, MES, Cloud Integration</p>
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <div class="project-img-wrapper">
+                <img src="images/project1.jpg" alt="Smart Greenhouse">
+            </div>
+            <div class="project-info">
+                <h3>Smart Greenhouse Automation</h3>
+                <p>PLC, SCADA, IIoT, MES, Cloud Integration</p>
+                <span class="tag">Industry 4.0</span>
+            </div>
         </div>
-        <div class="card">
-            <img src="images/project2.jpg" alt="Poultry Farm Automation" class="project-img">
-            <h3>Poultry Farm Automation</h3>
-            <p>AI Monitoring, PLC & SCADA Full Automation</p>
         </div>
-        <div class="card">
-            <img src="images/project3.jpg" alt="Industrial Panel Design" class="project-img">
-            <h3>Industrial Panel Design</h3>
-            <p>LV Panels, Schneider Electric Standards</p>
-        </div>
-    </div>
 </section>
 
 <section id="skills">
-    <h2 class="section-title">Skills</h2>
-    <div class="skills">
-        <div class="skill">PLC Programming</div>
-        <div class="skill">SCADA Systems</div>
-        <div class="skill">HMI Design</div>
-        <div class="skill">TIA Portal V16</div>
-        <div class="skill">Factory IO</div>
-        <div class="skill">MATLAB & Simulink</div>
-        <div class="skill">Motor Drives</div>
-        <div class="skill">ETAP</div>
-        <div class="skill">Industrial Sensors</div>
+    <h2 class="section-title">Technical Expertise</h2>
+    <div class="skills-container">
+        <div class="skill-pill">PLC Programming</div>
+        <div class="skill-pill">SCADA Systems</div>
+        <div class="skill-pill">TIA Portal V16</div>
+        <div class="skill-pill">MATLAB / Simulink</div>
+        <div class="skill-pill">ETAP</div>
+        <div class="skill-pill">HMI Design</div>
     </div>
 </section>
 
 <section id="contact">
-    <h2 class="section-title">Contact</h2>
-    <p>📞 01204791684 | ✉️ hossammohammed2002h@gmail.com</p>
-    <p>📍 Beheira | <a href="http://www.linkedin.com/in/Hossam2002">LinkedIn</a></p>
-    <a href="HossamCV.pdf" download class="btn">Download CV</a>
+    <div class="contact-box">
+        <h2 class="section-title">Let's Connect</h2>
+        <p>Interested in collaborating or hiring? Reach out via the channels below.</p>
+        <div class="contact-links">
+            <a href="mailto:hossammohammed2002h@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            <a href="http://www.linkedin.com/in/Hossam2002"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </div>
 </section>
 
 <footer>
-    © 2025 Hossam Eldin Mohammed | Industrial Automation Engineer
+    <p>&copy; 2025 Hossam Eldin Mohammed | Designed for Excellence</p>
 </footer>
 
 <script src="script.js"></script>
